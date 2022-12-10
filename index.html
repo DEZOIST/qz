@@ -51,10 +51,10 @@
     <script>
         function showtime() {
             var md = new Date();
-            var tt = md.getFullYear() + "-" + (md.getMonth() + 1) + "-" + md.getDate();
+            var tt = md.getFullYear() + "-" + (md.getMonth() + 1) + "-" + (md.getDate() - 1);
             document.getElementById("now").innerHTML = "填报日期：" + tt;
             document.getElementById("whe").innerHTML = "审核时间：" + tt;
-            tt = md.getFullYear() + "-" + (md.getMonth() + 1) + "-" + (md.getDate() + 1);
+            tt = md.getFullYear() + "-" + (md.getMonth() + 1) + "-" + md.getDate();
             document.getElementById("beg").innerHTML = tt + " 08:00:00点";
             document.getElementById("end").innerHTML = tt + " 23:00:00点";
         }
